@@ -1,0 +1,468 @@
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git init
+Reinitialized existing Git repository in C:/Programming and Learning/.git/
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git add .
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git confing --global user.email "ezegiampaoli@gmail.com"
+git: 'confing' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git config --global user.email "ezegiampaoli@gmail.com"
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git config --global user.name "Ezequiel"
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Proyecto.html
+        new file:   hola.js
+        new file:   style.css
+
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git commit
+[main (root-commit) 8f4dda6] mi primer commit
+ 3 files changed, 16 insertions(+)
+ create mode 100644 Proyecto.html
+ create mode 100644 hola.js
+ create mode 100644 style.css
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git log
+commit 8f4dda6dab8bea2e93e67d3d539df0ae83e418f7 (HEAD -> main)
+Author: Ezequiel <ezegiampaoli@gmail.com>
+Date:   Wed Apr 14 22:04:13 2021 -0300
+
+    mi primer commit
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Proyecto.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git checkout --Proyecto.html
+error: unknown option `Proyecto.html'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --guess               second guess 'git checkout <no-such-branch>' (default)
+    --overlay             use overlay mode (default)
+    -q, --quiet           suppress progress reporting
+    --recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --progress            force progress reporting
+    -m, --merge           perform a 3-way merge with the new branch
+    --conflict <style>    conflict style (merge or diff3)
+    -d, --detach          detach HEAD at named commit
+    -t, --track           set upstream info for new branch
+    -f, --force           force checkout (throw away local modifications)
+    --orphan <new-branch>
+                          new unparented branch
+    --overwrite-ignore    update ignored files (default)
+    --ignore-other-worktrees
+                          do not check if another worktree is holding the given
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separ
+
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Proyecto.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git checkout --Proyecto.html
+error: unknown option `Proyecto.html'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --guess               second guess 'git checkout <no-such-branch>' (default)
+    --overlay             use overlay mode (default)
+    -q, --quiet           suppress progress reporting
+    --recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --progress            force progress reporting
+    -m, --merge           perform a 3-way merge with the new branch
+    --conflict <style>    conflict style (merge or diff3)
+    -d, --detach          detach HEAD at named commit
+    -t, --track           set upstream info for new branch
+    -f, --force           force checkout (throw away local modifications)
+    --orphan <new-branch>
+                          new unparented branch
+    --overwrite-ignore    update ignored files (default)
+    --ignore-other-worktrees
+                          do not check if another worktree is holding the given
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separ
+
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git checkout --Proyecto.html
+error: unknown option `Proyecto.html'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --guess               second guess 'git checkout <no-such-branch>' (default)
+    --overlay             use overlay mode (default)
+    -q, --quiet           suppress progress reporting
+    --recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --progress            force progress reporting
+    -m, --merge           perform a 3-way merge with the new branch
+    --conflict <style>    conflict style (merge or diff3)
+    -d, --detach          detach HEAD at named commit
+    -t, --track           set upstream info for new branch
+    -f, --force           force checkout (throw away local modifications)
+    --orphan <new-branch>
+                          new unparented branch
+    --overwrite-ignore    update ignored files (default)
+    --ignore-other-worktrees
+                          do not check if another worktree is holding the given
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separ
+
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git checkout -- Proyecto.html
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git diff Proyecto.html
+diff --git a/Proyecto.html b/Proyecto.html
+index f211c87..b0d5c07 100644
+--- a/Proyecto.html
++++ b/Proyecto.html
+@@ -1,7 +1,8 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+-       <title></title>
++       <meta charset="utf-8">
++       <title>Primera pagina</title>
+ </head>
+ <body>
+
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Proyecto.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git add Proyecto.html
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Proyecto.html
+
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git commit
+[main b1921ed] Ahora el Proyecto.html tiene titulo y meta
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git log
+commit b1921ed18cf05db4825cfa261c68e93294d384ea (HEAD -> main)
+Author: Ezequiel <ezegiampaoli@gmail.com>
+Date:   Wed Apr 14 22:09:51 2021 -0300
+
+    Ahora el Proyecto.html tiene titulo y meta
+
+commit 8f4dda6dab8bea2e93e67d3d539df0ae83e418f7
+Author: Ezequiel <ezegiampaoli@gmail.com>
+Date:   Wed Apr 14 22:04:13 2021 -0300
+
+    mi primer commit
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git add .gitignore
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git commit -m "he agregado un gitignore"
+[main 7d84dfb] he agregado un gitignore
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git log
+commit 7d84dfb351c245728fef6a5e2f431bd6f49eb2f2 (HEAD -> main)
+Author: Ezequiel <ezegiampaoli@gmail.com>
+Date:   Wed Apr 14 22:14:46 2021 -0300
+
+    he agregado un gitignore
+
+commit b1921ed18cf05db4825cfa261c68e93294d384ea
+Author: Ezequiel <ezegiampaoli@gmail.com>
+Date:   Wed Apr 14 22:09:51 2021 -0300
+
+    Ahora el Proyecto.html tiene titulo y meta
+
+commit 8f4dda6dab8bea2e93e67d3d539df0ae83e418f7
+Author: Ezequiel <ezegiampaoli@gmail.com>
+Date:   Wed Apr 14 22:04:13 2021 -0300
+
+    mi primer commit
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git branch
+* main
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git branch login
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git branch
+  login
+* main
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git che
+checkout      cherry        cherry-pick
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git checkout 'login'
+Switched to branch 'login'
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (login)
+$ git branch
+* login
+  main
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (login)
+$ git status
+On branch login
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        wea.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (login)
+$ git add .
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (login)
+$ git status
+On branch login
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   wea.js
+
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (login)
+$ git commit -m "version alternativa con un login"
+[login f05b91a] version alternativa con un login
+ 1 file changed, 1 insertion(+)
+ create mode 100644 wea.js
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (login)
+$ git log
+commit f05b91a7a73b06bc72f20cc396e64fd8aa9447a4 (HEAD -> login)
+Author: Ezequiel <ezegiampaoli@gmail.com>
+Date:   Wed Apr 14 22:17:46 2021 -0300
+
+    version alternativa con un login
+
+commit 7d84dfb351c245728fef6a5e2f431bd6f49eb2f2 (main)
+Author: Ezequiel <ezegiampaoli@gmail.com>
+Date:   Wed Apr 14 22:14:46 2021 -0300
+
+    he agregado un gitignore
+
+commit b1921ed18cf05db4825cfa261c68e93294d384ea
+Author: Ezequiel <ezegiampaoli@gmail.com>
+Date:   Wed Apr 14 22:09:51 2021 -0300
+
+    Ahora el Proyecto.html tiene titulo y meta
+
+commit 8f4dda6dab8bea2e93e67d3d539df0ae83e418f7
+Author: Ezequiel <ezegiampaoli@gmail.com>
+Date:   Wed Apr 14 22:04:13 2021 -0300
+
+    mi primer commit
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (login)
+$ git checkout 'main'
+Switched to branch 'main'
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git log
+commit 7d84dfb351c245728fef6a5e2f431bd6f49eb2f2 (HEAD -> main)
+Author: Ezequiel <ezegiampaoli@gmail.com>
+Date:   Wed Apr 14 22:14:46 2021 -0300
+
+    he agregado un gitignore
+
+commit b1921ed18cf05db4825cfa261c68e93294d384ea
+Author: Ezequiel <ezegiampaoli@gmail.com>
+Date:   Wed Apr 14 22:09:51 2021 -0300
+
+    Ahora el Proyecto.html tiene titulo y meta
+
+commit 8f4dda6dab8bea2e93e67d3d539df0ae83e418f7
+Author: Ezequiel <ezegiampaoli@gmail.com>
+Date:   Wed Apr 14 22:04:13 2021 -0300
+
+    mi primer commit
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git checkout 'login'
+Switched to branch 'login'
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (login)
+$ git checkout 'main'
+Switched to branch 'main'
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git remote add origin https://github.com/egiam/git-curso.git
+bash: $'\302\226git': command not found
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git remote add origin https://github.com/egiam/git-curso.git
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git push -u origin main
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (11/11), 1.06 KiB | 271.00 KiB/s, done.
+Total 11 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/egiam/git-curso.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+Ezequiel@ideapad-L340 MINGW64 /c/Programming and Learning (main)
+$ git push -u origin main
+Everything up-to-date
+Branch 'main' set up to track remote branch 'main' from 'origin'.

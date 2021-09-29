@@ -1,0 +1,21 @@
+
+Ethical Hacking
+
+
+
+netdiscover -r 192.168.0.251/24
+192.168.0.137
+192.168.0.160
+192.168.0.1
+192.168.0.25
+
+
+nmap -sC -sS -O 192.168.0.251  
+nmap -A 192.168.0.251  
+
+dirb http://192.168.0.251/
+
+wpscan --url http://192.168.0.251/wordpress/ -e at -e ap -e u
+
+
+

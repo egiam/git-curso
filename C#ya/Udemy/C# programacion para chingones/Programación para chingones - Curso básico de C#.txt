@@ -1,0 +1,29 @@
+Programación para chingones - Curso básico de C#
+
+
+para == 
+if (texto1.Equals(texto2))
+	{
+	  sss
+	}
+else 
+	{
+	  sss
+	}
+
+-----------------------------------------------------
+Aleatorio, random
+Random (nombre q le quieras poner) = new Random();
+
+Como crear un nuevo objeto.
+
+(nombrepuesto).Next(0,100);
+--(numero aleatorio entre cero y cien) solo inclue el numero menor, pero no el mayor.
+(nombrepuesto).NextDouble(); 
+-- Numero random con decimales
+
+-----------------------------------------------------
+
+
+
+

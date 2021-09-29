@@ -1,0 +1,7 @@
+D:\Programming and Learning\C#ya\Udemy\C# programacion para chingones\Calculadora\Calculadora\bin\Debug\Calculadora.exe.config
+D:\Programming and Learning\C#ya\Udemy\C# programacion para chingones\Calculadora\Calculadora\bin\Debug\Calculadora.exe
+D:\Programming and Learning\C#ya\Udemy\C# programacion para chingones\Calculadora\Calculadora\bin\Debug\Calculadora.pdb
+D:\Programming and Learning\C#ya\Udemy\C# programacion para chingones\Calculadora\Calculadora\obj\Debug\Calculadora.csprojAssemblyReference.cache
+D:\Programming and Learning\C#ya\Udemy\C# programacion para chingones\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache
+D:\Programming and Learning\C#ya\Udemy\C# programacion para chingones\Calculadora\Calculadora\obj\Debug\Calculadora.exe
+D:\Programming and Learning\C#ya\Udemy\C# programacion para chingones\Calculadora\Calculadora\obj\Debug\Calculadora.pdb

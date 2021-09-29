@@ -1,0 +1,7 @@
+D:\Programming and Learning\C#ya\Udemy\C# programacion para chingones\Loteria\Loteria\bin\Debug\Loteria.exe.config
+D:\Programming and Learning\C#ya\Udemy\C# programacion para chingones\Loteria\Loteria\bin\Debug\Loteria.exe
+D:\Programming and Learning\C#ya\Udemy\C# programacion para chingones\Loteria\Loteria\bin\Debug\Loteria.pdb
+D:\Programming and Learning\C#ya\Udemy\C# programacion para chingones\Loteria\Loteria\obj\Debug\Loteria.csprojAssemblyReference.cache
+D:\Programming and Learning\C#ya\Udemy\C# programacion para chingones\Loteria\Loteria\obj\Debug\Loteria.csproj.CoreCompileInputs.cache
+D:\Programming and Learning\C#ya\Udemy\C# programacion para chingones\Loteria\Loteria\obj\Debug\Loteria.exe
+D:\Programming and Learning\C#ya\Udemy\C# programacion para chingones\Loteria\Loteria\obj\Debug\Loteria.pdb

